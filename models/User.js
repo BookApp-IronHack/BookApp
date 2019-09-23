@@ -2,8 +2,20 @@ const mongoose = require('mongoose');
 const Schema   = mongoose.Schema;
 
 const userSchema = new Schema({
+  email,
   username: String,
-  password: String
+  password: String,
+  status: {
+    type: String,
+    enum: ["Pendiente de confirmación", "Activo"],
+    default: "Pendiente de confirmación"
+  },
+  confirmationCode: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  profilePicture: String
 }, {
   timestamps: {
     createdAt: 'created_at',
