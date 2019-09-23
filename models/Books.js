@@ -7,9 +7,9 @@ const bookSchema = new Schema({
   author: String,
   pages: Number,
   publisher_date: Number,
-  categories: String,
+  categories: [],
   content: String
 
 })
-const Book = mongoose.model('Book', bookSchema);
-module.exports = Book;
+const Books = mongoose.model('Book', bookSchema);
+module.exports = Books;
