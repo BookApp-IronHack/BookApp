@@ -8,7 +8,8 @@ const bookSchema = new Schema({
   pages: Number,
   publisher_date: Number,
   categories: [],
-  content: String
+  content: String,
+  comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
 
 })
 const Books = mongoose.model('Book', bookSchema);

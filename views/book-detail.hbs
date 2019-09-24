@@ -1,0 +1,24 @@
+
+<img src={{oneBook.cover}} alt="{{oneBook.title}}">
+<p>Título: {{oneBook.title}}</p>
+<p>Autor: {{oneBook.author}}</p>
+<p>Categoría: {{oneBook.categories.[0].name}}</p>
+<p>Nº de páginas: {{oneBook.pages}}</p>
+<p>Fecha de publicación: {{oneBook.publisher_date}}</p>
+<p><span>Descripción: </span> <span>{{oneBook.content}}</span></p>
+
+<h2>Añadir un comentario</h2>
+<form action="/addComment/{{oneBook._id}}" method="POST">
+<label>Escribir un comentario:</label>
+<textarea name="content" cols="30" rows="5"></textarea>
+  <input type="submit" value="Submit comment">
+</form>
+
+<h2>Comentarios:</h2>
+<ul>
+  {{#each oneBook.comments}}
+  <li>
+    <p>{{this.content}}</p>
+  </li>
+  {{/each}}
+</ul>

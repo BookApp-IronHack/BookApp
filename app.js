@@ -74,12 +74,14 @@ app.use(session({
 app.use(flash());
 require('./passport')(app);
     
-
+const booksRoutes = require('./routes/books');
+app.use('/', booksRoutes);  
 const index = require('./routes/index');
 app.use('/', index);
 
 const authRoutes = require('./routes/auth');
 app.use('/auth', authRoutes);
-      
+
+
 
 module.exports = app;

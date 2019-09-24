@@ -1,2 +1,11 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<ul>
+{{#each allBooks}}
+<li>
+  <img src={{cover}} alt="{{title}}">
+  <p>Título: {{this.title}}</p>
+  <p>Autor: {{this.author}}</p>
+  <p>Categoría: {{this.categories.[0].name}}</p>
+</li>
+<a href="/books/{{this._id}}">Ver detalles</a>
+{{/each}}
+</ul>
