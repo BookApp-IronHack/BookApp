@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Books = require("../models/Book");
+const Books = require("../models/Books");
 const Comment = require("../models/Comments");
 const access = require("./../middlewares/access.mid");
 
@@ -13,12 +13,9 @@ router.get('/', (req, res) => {
       categories: 1
     })
     .then(allBooks => {
-      res.render('index', {
-        allBooks
-      })
+      res.render('index', {allBooks, user: req.user})
     })
-})
-
+  })
 router.get('/books/:id/', (req, res) => {
   const user = req.user
   Books.findById(req.params.id)
