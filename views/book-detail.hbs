@@ -18,6 +18,8 @@
 <ul>
   {{#each oneBook.comments}}
   <li>
+    <img src={{this.creatorId.photo.url}} alt="">
+    <p>Autor: {{this.creatorId.username}}</p>
     <p>{{this.content}}</p>
   </li>
   {{/each}}
