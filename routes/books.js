@@ -9,8 +9,7 @@ router.get('/', (req, res, next) => {
     cover: 1, title: 1, author: 1, categories: 1
   })
   .then(allBooks => {
-    console.log(allBooks)
-    res.render('index', {allBooks})
+    res.render('index', {allBooks, user: req.user})
   })
 })
 
@@ -18,7 +17,6 @@ router.get('/books/:id/', (req, res) => {
   Books.findById(req.params.id)
   .populate('comments')
   .then(oneBook => {
-    console.log(oneBook)
     res.render('book-detail', {oneBook})
   })
 })
