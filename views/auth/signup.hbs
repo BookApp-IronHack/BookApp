@@ -1,7 +1,7 @@
 <h2>Signup</h2>
 
 <form action="/auth/signup" method="POST" id="signup-form"
-  enctype="multipart/form-data">
+  enctype="multipart/form-data" >
 
   <div class="form-field">
     <label for="email">Email</label>
@@ -10,7 +10,7 @@
 
   <div class="form-field">
     <label for="username">Username</label>
-    <input id="username" type="text" name="username" placeholder="Username">
+    <input id="username" type="text" name="username" placeholder="Username" autocomplete="on">
   </div>
 
   <div class="form-field">
@@ -20,7 +20,7 @@
 
   <div class="form-field">
     <label for="password">Password</label>
-    <input id="password" type="password" name="password" placeholder="Password">
+    <input id="password" type="password" name="password" placeholder="Password" autocomplete="current-password">
   </div>
 
   {{#if message }}
