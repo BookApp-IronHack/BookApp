@@ -53,11 +53,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+* {
+  box-sizing: border-box; }
 
-a {
-  color: #00B7FF; }
+body {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif; }
+
+.belt {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
