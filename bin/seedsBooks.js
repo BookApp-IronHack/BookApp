@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const mongoose = require("mongoose");
 const Books = require("../models/Books");
 const fs = require("fs");
