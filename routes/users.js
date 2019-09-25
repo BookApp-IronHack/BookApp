@@ -22,7 +22,7 @@ router.get('/resena', (req, res) => {
 
 router.post("/resena", upload.single("picName"), (req, res, next) => {
   const { title, author, pages, publisher_date, categories, content } = req.body;
-  const cover = req.file.toString();
+  const cover = req.file.url.toString();
 
   const newBook = new Book({
     title,
@@ -32,11 +32,12 @@ router.post("/resena", upload.single("picName"), (req, res, next) => {
     categories,
     content,
     cover,
-    
+
   });
 
   newBook.save()
 
+    .then(() => res.redirect("/"))
 })
 
 
