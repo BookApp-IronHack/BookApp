@@ -57,21 +57,13 @@ table {
   box-sizing: border-box; }
 
 body {
-<<<<<<< HEAD
-  font-size: 12px; }
-=======
   font-size: 12px;
   font-family: "Roboto", sans-serif; }
->>>>>>> layout
 
 .belt {
   display: block;
   margin: 0 auto;
-<<<<<<< HEAD
-  max-width: 117rem;
-=======
   max-width: 90%;
->>>>>>> layout
   width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
