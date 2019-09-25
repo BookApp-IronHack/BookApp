@@ -71,6 +71,7 @@ require('./passport')(app);
     
 const booksRoutes = require('./routes/books');
 app.use('/', booksRoutes);  
+
 const index = require('./routes/index');
 app.use('/', index);
 
@@ -79,6 +80,9 @@ app.use('/auth', authRoutes);
 
 const usersRoutes=require('./routes/users')
 app.use('/', usersRoutes);
+
+const twitterRoutes = require('./routes/twitter')
+app.use('/', twitterRoutes);
 
 
 module.exports = app;

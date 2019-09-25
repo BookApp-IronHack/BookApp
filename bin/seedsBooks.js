@@ -3,7 +3,7 @@ const Books = require("../models/Books");
 const fs = require("fs");
 
 mongoose
-.connect('mongodb://localhost/bookapp', {useNewUrlParser: true})
+.connect(process.env.MONGO, {useNewUrlParser: true})
 .then(x => {
   console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   getData();
