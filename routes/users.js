@@ -1,3 +1,6 @@
+require("dotenv").config();
+
+const multer = require('multer')
 const express = require('express');
 const router = express.Router();
 const User = require("../models/User");
@@ -17,22 +20,22 @@ router.get('/resena', (req, res) => {
 })
 
 
-router.post("/books/:id", upload.single("userPhoto"), (req, res, next) => {
+router.post("/resena", upload.single("picName"), (req, res, next) => {
   const { title, author, pages, publisher_date, categories, content } = req.body;
-  const { originalname, url } = req.file;
+  const cover = req.file.toString();
 
   const newBook = new Book({
     title,
     author,
+    pages,
     publisher_date,
     categories,
     content,
-    cover: {
-      url,
-      name: originalname
-    },
+    cover,
     
   });
+
+  newBook.save()
 
 })
 
