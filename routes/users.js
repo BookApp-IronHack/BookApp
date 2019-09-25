@@ -11,8 +11,12 @@ const access = require("./../middlewares/access.mid");
 
 
 router.get('/profile', (req, res) => {
-  const user = req.user;
-  res.render('profile-detail', { user })
+  User.findById(req.user._id)
+    .populate("books")
+    .then(user => {
+      res.render('profile-detail', { user })
+
+    })
 
 })
 
@@ -46,7 +50,13 @@ router.post("/resena", upload.single("picName"), access.checkLogin, (req, res, n
 
   newBook.save()
 
-    .then(() => res.redirect("/"))
+    .then((book) => {
+      User.findByIdAndUpdate(req.user._id, { $push: { books: book._id } }, { new: true })
+        .then((user) => {
+          res.redirect("/")
+
+        })
+    })
 })
 
 
