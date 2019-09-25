@@ -56,9 +56,13 @@ table {
 * {
   box-sizing: border-box; }
 
+html {
+  font-size: 16px; }
+
 body {
-  font-size: 12px;
-  font-family: "Roboto", sans-serif; }
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  background-color: #517F2F; }
 
 .belt {
   display: block;
