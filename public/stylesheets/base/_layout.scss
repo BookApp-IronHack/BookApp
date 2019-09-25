@@ -4,12 +4,13 @@
 
 body {
   font-size: 12px;
+  font-family: $font-family;
 }
 
 .belt{
   display: block;
 	margin: 0 auto;
-  max-width: 117rem;
+  max-width: 90%;
   width: 100%;
 }
 
