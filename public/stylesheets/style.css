@@ -437,12 +437,14 @@ body {
 .books-item:nth-child(2)::after {
   content: "";
   width: 170px;
-  height: 137px;
+  height: 100px;
   display: block;
   background: url(../../images/new.png);
   position: absolute;
   top: -17px;
-  left: 0; }
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .timeline-container {
   padding-top: 8rem;
