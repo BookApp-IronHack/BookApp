@@ -1,14 +1,23 @@
-<div class="belt">
-<ul>
-{{#each allBooks}}
-<li>
-  <img src={{cover}} alt="{{title}}">
-  <p>Título: {{this.title}}</p>
-  <p>Autor: {{this.author}}</p>
-  <p>Categoría: {{this.categories.[0].name}}</p>
-</li>
-<a href="/books/{{this._id}}">Ver detalles</a>
-{{/each}}
-</ul>
-</div>
-
+<section class="home">
+  <div class="belt">
+    <ul class="books">
+      {{#each allBooks}}
+      <li class="books-item">
+        <img class="books-item__image" src={{cover}} alt="{{title}}">
+        <div class="books-item__container">
+          <p class="books-item__title"><span class="books-item__bold">Título:</span> {{this.title}}</p>
+          <p class="books-item__author"><span class="books-item__bold">Autor:</span> {{this.author}}</p>
+          <p class="books-item__category"><span class="books-item__bold">Categoría:</span> {{this.categories.[0].name}}
+          </p>
+          <ul class="book-details-container">
+            <a class="books-details" href="/books/{{this._id}}">
+              <li class="books-details__item">Ver detalles
+                <span></span><span></span><span></span><span></span>
+              </li>
+            </a></ul>
+        </div>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

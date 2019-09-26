@@ -1,0 +1,19 @@
+.footer{
+  background-color:$secundary-color;
+  padding: 1.5rem 0;
+}
+
+.footer-text{
+  font-size: 1rem;
+  color:$text-color-white;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-icon{
+  width: 25%;
+}
