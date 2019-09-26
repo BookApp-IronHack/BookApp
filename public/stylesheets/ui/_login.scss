@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+
+div {
+  overflow: auto;
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+#form-container {
+  height: 100%;
+  width: 20%;
+  background-color: rgba($color: rgb(44, 165, 48), $alpha: 0.2);
+  border-radius: 10px;
+  padding: 30px 20px;
+  display: inline;
+}
+.labellogin,.labelpassword {
+  width: 70%;
+  padding: 30px ;
+  margin-top: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 20px;
+
+}
+
+.labelpassword{
+  margin-top: 15px;
+
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 70%;
+  padding: 8px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 20px !important;
+}
+
+
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 30px 0;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 20px;
+}
+
+
+
+.account-message {
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+color: black;
+}
+
+a:hover {
+
+  text-decoration: underline;
+  
+  }

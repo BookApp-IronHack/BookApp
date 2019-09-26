@@ -1,25 +1,25 @@
+ <div>
+  <form action="/auth/login" method="POST" id="form-container">
+    <h2>Inicia sesión</h2>
 
-<h2>Login</h2>
+    <label class="labellogin" for="username">Usuario</label>
+    <input id="username" type="text" name="username" placeholder="Usuario" autocomplete="on">
 
-<form action="/auth/login" method="POST" id="form-container" >
-  <label for="username">Username</label>
-  <input id="username" type="text" name="username" placeholder="JonSnow" autocomplete="on">
 
-  <br><br>
+    <label class="labelpassword" for="password">Contraseña</label>
+    <input id="password" type="password" name="password" placeholder="Contraseña" autocomplete="current-password">
 
-  <label for="password">Password</label>
-  <input id="password" type="password" name="password" placeholder="Your password" autocomplete="current-password">
-  <br>
-  {{#if message }}
+
+    {{#if message }}
     <div class="error-message">{{ message }}</div>
-  {{/if}}
+    {{/if}}
 
-  <br><br>
 
-  <button>Login</button>
+    <button>Login</button>
 
-  <p class="account-message">
-    Don't have an account yet?
-    <a href="/auth/signup">Signup</a>
-  </p>
-</form>
+    <p class="account-message">
+      ¿No tienes cuenta todavía?
+      <a href="/auth/signup" text-decoration="none" >Regístrate</a>
+    </p>
+  </form>
+</div> 
