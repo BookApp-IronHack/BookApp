@@ -2,11 +2,12 @@
   background-color: $principal-color;
   padding: 0.5rem 0;
   position: fixed;
-  width: 100%;
+	width: 100%;
+	z-index: 2;
 }
 
 .header-logo{
-  width: 13%;
+  width: 50%;
 }
 
 .header-container{
