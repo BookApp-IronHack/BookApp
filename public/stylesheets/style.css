@@ -60,7 +60,7 @@ html {
   font-size: 16px; }
 
 body {
-  font-family: "Roboto", sans-serif; 
+  font-family: "Roboto", sans-serif;
   background: url(../images/bg.jpg); }
 
 .belt {
@@ -69,166 +69,6 @@ body {
   max-width: 1300px;
   width: 100%; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-h2 {
-  margin-top: 20px;
-  font-size: 35px; }
-
-div {
-  overflow: auto;
-  margin-top: 4%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  text-align: center;
-  position: relative; }
-
-#form-container {
-  height: 100%;
-  width: 20%;
-  background-color: rgba(44, 165, 48, 0.2);
-  border-radius: 10px;
-  padding: 30px 20px;
-  display: inline; }
-
-.labellogin, .labelpassword {
-  width: 70%;
-  padding: 30px;
-  margin-top: 20px;
-  display: inline-block;
-  box-sizing: border-box;
-  border-radius: 10px;
-  height: 60px;
-  font-size: 20px; }
-
-.labelpassword {
-  margin-top: 15px; }
-
-input[type="text"],
-input[type="password"] {
-  width: 70%;
-  padding: 8px 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  border-radius: 10px;
-  height: 60px;
-  font-size: 20px !important; }
-
-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 14px 20px;
-  margin: 30px 0;
-  border: none;
-  cursor: pointer;
-  width: 70%;
-  border-radius: 10px;
-  height: 60px;
-  font-size: 20px; }
-
-.account-message {
-  font-size: 20px; }
-
-a {
-  text-decoration: none;
-  color: black; }
-
-a:hover {
-  text-decoration: underline; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-h2 {
-  margin-top: 20px;
-  font-size: 35px; }
-
-div {
-  overflow: auto;
-  margin-top: 4%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  text-align: center;
-  position: relative; }
-
-.form-field {
-  margin-top: 1px; }
-
-#form-container {
-  height: 100%;
-  width: 30%;
-  background-color: rgba(44, 165, 48, 0.2);
-  border-radius: 10px;
-  padding: 30px 0px;
-  display: inline; }
-
-.labelsignup {
-  width: 70%;
-  padding: 30px;
-  display: inline-block;
-  box-sizing: border-box;
-  border-radius: 10px;
-  height: 30px;
-  font-size: 20px; }
-
-.labelpassword {
-  margin-top: 15px; }
-
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-  width: 70%;
-  padding: 8px 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  border-radius: 10px;
-  height: 60px;
-  font-size: 20px !important; }
-
-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 14px 20px;
-  margin: 30px 0;
-  border: none;
-  cursor: pointer;
-  width: 70%;
-  border-radius: 10px;
-  height: 60px;
-  font-size: 20px; }
-
-.account-message {
-  font-size: 20px; }
-
-a {
-  text-decoration: none;
-  color: black; }
-
-a:hover {
-  text-decoration: underline; }
-
-input[type="file"] {
-  width: 70%;
-  display: inline-block;
-  padding-top: 22px;
-  border: 1px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  height: 60px;
-  font-size: 17px !important;
-  display: flex;
-  align-items: center; }
 .header {
   background-color: #517F2F;
   padding: 0.5rem 0;
@@ -318,6 +158,166 @@ input[type="file"] {
   -webkit-transform: rotate(0deg) translateX(50%);
   -moz-transform: rotate(0deg) translateX(50%);
   transform: rotate(0deg) translateX(50%); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.h2-login {
+  margin-top: 20px;
+  font-size: 35px; }
+
+.div-login {
+  overflow: auto;
+  padding-top: 8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 227px; }
+
+#form-container {
+  height: 100%;
+  width: 30%;
+  background-color: rgba(44, 165, 48, 0.2);
+  border-radius: 10px;
+  padding: 30px 20px;
+  display: inline; }
+
+.labellogin, .labelpassword {
+  width: 70%;
+  padding: 30px;
+  margin-top: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 20px; }
+
+.labelpassword {
+  margin-top: 15px; }
+
+.input-login {
+  width: 70%;
+  padding: 8px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 20px !important; }
+
+.button-login {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 30px 0;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 20px; }
+
+.account-message {
+  font-size: 20px; }
+
+.link-login {
+  text-decoration: none;
+  color: black; }
+
+.link-login:hover {
+  text-decoration: underline; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.h2signup {
+  margin-top: 20px;
+  font-size: 35px; }
+
+.div-signup {
+  overflow: auto;
+  display: flex;
+  padding-top: 8rem;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 57px; }
+
+.form-field-signup {
+  margin-top: 1px; }
+
+#form-container-signup {
+  height: 100%;
+  width: 30%;
+  background-color: rgba(44, 165, 48, 0.2);
+  border-radius: 10px;
+  padding: 30px 0px;
+  display: inline; }
+
+.labelsignup {
+  width: 70%;
+  padding: 30px;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 30px;
+  font-size: 20px; }
+
+.labelpassword {
+  margin-top: 15px; }
+
+.inputsignup {
+  width: 70%;
+  padding: 8px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 20px !important; }
+
+.button-signup {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 30px 0;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 20px; }
+
+.account-message {
+  font-size: 20px; }
+
+.link {
+  text-decoration: none;
+  color: black; }
+
+.link:hover {
+  text-decoration: underline; }
+
+.input-file-signup {
+  width: 70%;
+  display: inline-block;
+  padding-top: 22px;
+  border: 1px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 17px !important;
+  display: flex;
+  align-items: center; }
 
 .footer {
   background-color: #224511;

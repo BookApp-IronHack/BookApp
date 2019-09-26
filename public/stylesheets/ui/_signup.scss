@@ -4,27 +4,31 @@
   box-sizing: border-box;
 }
 
-h2 {
+.h2signup {
   margin-top: 20px;
   font-size: 35px;
 }
 
-div {
+.div-signup{
   overflow: auto;
-  margin-top: 4%;
   display: flex;
+  padding-top: 8rem;
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
   text-align: center;
   position: relative;
+  margin-bottom: 57px;
+
 }
 
-.form-field {
+
+.form-field-signup {
   margin-top: 1px;
+  
 }
 
-#form-container {
+#form-container-signup {
   height: 100%;
   width: 30%;
   background-color: rgba($color: rgb(44, 165, 48), $alpha: 0.2);
@@ -46,9 +50,7 @@ div {
   margin-top: 15px;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"] {
+.inputsignup {
   width: 70%;
   padding: 8px 20px;
   display: inline-block;
@@ -59,7 +61,7 @@ input[type="email"] {
   font-size: 20px !important;
 }
 
-button {
+.button-signup {
   background-color: #4caf50;
   color: white;
   padding: 14px 20px;
@@ -76,18 +78,18 @@ button {
   font-size: 20px;
 }
 
-a {
+.link {
   text-decoration: none;
   color: black;
 }
 
-a:hover {
+.link:hover {
   text-decoration: underline;
 }
 
 
 
-input[type="file"] {
+.input-file-signup {
   width: 70%;
   display: inline-block;
   padding-top: 22px;

@@ -1,40 +1,40 @@
-<div>
+<div class="div-signup">
 
 
-  <form action="/auth/signup" method="POST" id="form-container" enctype="multipart/form-data">
+  <form action="/auth/signup" method="POST" id="form-container-signup" enctype="multipart/form-data">
   
-    <h2>Regístrate</h2>
+    <h2 class="h2signup">Regístrate</h2>
 
-    <div class="form-field">
+    <div class="form-field-signup">
       <label class="labelsignup" for="email">Email</label>
-      <input id="email" type="email" name="email" placeholder="Email">
+      <input  class="inputsignup" id="email" type="email" name="email" placeholder="Email" required>
     </div>
 
-    <div class="form-field">
+    <div class="form-field-signup">
       <label class="labelsignup" for="username">Usuario</label>
-      <input id="username" type="text" name="username" placeholder="Username" autocomplete="on">
+      <input class="inputsignup" id="username" type="text" name="username" placeholder="Username" autocomplete="on" required>
     </div>
 
 
 
-    <div class="form-field">
+    <div class="form-field-signup">
       <label class="labelsignup" for="password">Contraseña</label>
-      <input id="password" type="password" name="password" placeholder="Contraseña" autocomplete="current-password">
+      <input class="inputsignup" id="password" type="password" name="password" placeholder="Contraseña" autocomplete="current-password" required>
     </div>
 
-    <div class="form-field">
+    <div class="form-field-signup">
       <label class="labelsignup" for="user-photo">Sube tu foto</label>
-      <input class="inputfoto" type="file" name="userPhoto" id="user-photo" value="" title="">
+      <input class="inputfoto" type="file" name="userPhoto" id="user-photo" value="" title="" required>
     </div>
 
     {{#if message }}
     <div class="error-message">{{ message }}</div>
     {{/if}}
 
-    <button>Crear cuenta</button>
+    <button class="button-signup">Crear cuenta</button>
 
     <p class="account-message">
-      ¿Ya tienes una cuenta? <a href="/auth/login">Inicia sesión</a>
+      ¿Ya tienes una cuenta? <a class="link" href="/auth/login">Inicia sesión</a>
     </p>
   </form>
 
