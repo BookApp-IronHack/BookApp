@@ -1,28 +1,37 @@
 <div class="div-resena">
-  <form action="/resena" method="POST" id="resena-form" enctype="multipart/form-data" id="form-container">
+  <div class="belt">
+    <h1 class="h1-resena">Crea tu Reseña</h1>
+    <form action="/resena" method="POST" id="resena-form" enctype="multipart/form-data">
 
-    <h1 class="h1-resena">Reseña</h1>
+      <div class="div-left-resena">
 
-    <label for="title">Titulo</label>
-    <input type="text" name="title" id="title">
-    <br>
-    <label for="author">Autor</label>
-    <input type="text" name="author" id="author">
-    <br>
-    <label for="pages">Paginas</label>
-    <input type="number" name="pages" id="pages">
-    <br>
-    <label for="publisher_date">Fecha de publicación</label>
-    <input type="number" min="1900" max="2099" step="1" name="publisher_date" id="publisher_date">
-    <br>
-    <label for="categories">Categorias</label>
-    <input type="text" name="categories" id="categories">
-    <br>
-    <label for="content">Reseña</label>
-    <input type="text" name="content" id="content">
-    <br>
-    <input type="file" name="picName" id="picName">
-    <button>Create</button>
+        <label class="labels-resena" for="title">Título</label>
+        <input class="input-resena" type="text" name="title" id="title">
+        <br>
+        <label class="labels-resena" for="author">Autor</label>
+        <input class="input-resena" type="text" name="author" id="author">
+        <br>
+        <label class="labels-resena" for="pages">Páginas</label>
+        <input class="input-resena" type="number" name="pages" id="pages">
+        <br>
+        <label class="labels-resena" for="publisher_date">Fecha de publicación</label>
+        <input class="input-resena" type="number" step="1" name="publisher_date" id="publisher_date">
+        <br>
+        <label class="labels-resena" for="categories">Categorías</label>
+        <input class="input-resena" type="text" name="categories" id="categories">
+        <br>
+      </div>
 
-  </form>
+      <div class="div-right-resena">
+        <label class="labels-resena" for="content">Reseña</label>
+
+        <textarea name="content" class="input-resena-textarea" rows="14">Escriba aquí su reseña</textarea>
+        <br>
+        <label class="labels-resena-foto" for="categories">Suba la foto de portada del libro</label>
+
+        <input type="file" name="picName" class="picresena">
+        <button class="button-resena">Crear reseña</button>
+      </div>
+    </form>
+  </div>
 </div>

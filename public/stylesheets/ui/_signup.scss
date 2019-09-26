@@ -2,11 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: $text-color-dark;
+
 }
 
 .h2signup {
   margin-top: 20px;
   font-size: 35px;
+  color: $text-color-dark;
+
 }
 
 .div-signup{
@@ -44,10 +48,14 @@
   border-radius: 10px;
   height: 30px;
   font-size: 20px;
+  color: $text-color-dark;
+
 }
 
 .labelpassword {
   margin-top: 15px;
+  color: $text-color-dark;
+
 }
 
 .inputsignup {
@@ -80,7 +88,7 @@
 
 .link {
   text-decoration: none;
-  color: black;
+  color: $text-color-dark;
 }
 
 .link:hover {

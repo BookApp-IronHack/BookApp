@@ -14,6 +14,7 @@ router.get('/profile', (req, res) => {
   User.findById(req.user._id)
     .populate("books")
     .then(user => {
+      user.books.reverse()
       res.render('profile-detail', { user })
 
     })
@@ -33,9 +34,9 @@ router.get('/resena', access.checkLogin, (req, res) => {
 
 
 router.post("/resena", upload.single("picName"), access.checkLogin, (req, res, next) => {
-  const { title, author, pages, publisher_date, categories, content } = req.body;
+  const { title, author, pages, publisher_date, content } = req.body;
   const cover = req.file.url.toString();
-
+  const categories = {name: req.body.categories}
   const newBook = new Book({
     creatorId: req.user._id,
     title,

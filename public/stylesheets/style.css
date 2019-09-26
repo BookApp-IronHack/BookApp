@@ -227,7 +227,7 @@ body {
 
 .link-login {
   text-decoration: none;
-  color: black; }
+  color: #333333; }
 
 .link-login:hover {
   text-decoration: underline; }
@@ -235,11 +235,13 @@ body {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #333333; }
 
 .h2signup {
   margin-top: 20px;
-  font-size: 35px; }
+  font-size: 35px;
+  color: #333333; }
 
 .div-signup {
   overflow: auto;
@@ -270,10 +272,12 @@ body {
   box-sizing: border-box;
   border-radius: 10px;
   height: 30px;
-  font-size: 20px; }
+  font-size: 20px;
+  color: #333333; }
 
 .labelpassword {
-  margin-top: 15px; }
+  margin-top: 15px;
+  color: #333333; }
 
 .inputsignup {
   width: 70%;
@@ -302,7 +306,7 @@ body {
 
 .link {
   text-decoration: none;
-  color: black; }
+  color: #333333; }
 
 .link:hover {
   text-decoration: underline; }
@@ -444,42 +448,60 @@ body {
 
 .h1-resena {
   margin-top: 20px;
-  font-size: 35px; }
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333; }
 
 .div-resena {
   overflow: auto;
   padding-top: 8rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   border-radius: 10px;
-  text-align: center;
-  position: relative;
-  margin-bottom: 227px; }
+  margin-bottom: 32px; }
 
-#form-container {
+.div-right-resena {
+  width: 50%;
+  float: right;
   height: 100%;
-  width: 30%;
-  background-color: rgba(44, 165, 48, 0.2);
+  padding-left: 75px;
+  margin-bottom: 10px; }
+
+.input-resena-textarea {
+  width: 85%;
+  padding: 8px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
   border-radius: 10px;
-  padding: 30px 20px;
+  height: 50%;
+  font-size: 20px !important;
+  resize: none;
+  color: #333333; }
+
+.div-left-resena {
+  width: 50%;
+  float: left;
+  padding-bottom: 50px;
+  padding-left: 100px; }
+
+#resena-form {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
   display: inline; }
 
-.labelresena, .labelpassword {
+.labels-resena {
   width: 70%;
-  padding: 30px;
-  margin-top: 20px;
+  padding-top: 30px;
   display: inline-block;
   box-sizing: border-box;
   border-radius: 10px;
   height: 60px;
-  font-size: 20px; }
-
-.labelpassword {
-  margin-top: 15px; }
+  font-size: 20px;
+  color: #333333; }
 
 .input-resena {
-  width: 70%;
+  width: 85%;
   padding: 8px 20px;
   display: inline-block;
   border: 1px solid #ccc;
@@ -492,10 +514,10 @@ body {
   background-color: #4caf50;
   color: white;
   padding: 14px 20px;
-  margin: 30px 0;
+  margin: 27px 0;
   border: none;
   cursor: pointer;
-  width: 70%;
+  width: 85%;
   border-radius: 10px;
   height: 60px;
   font-size: 20px; }
@@ -503,11 +525,18 @@ body {
 .account-message {
   font-size: 20px; }
 
-.link-resena {
-  text-decoration: none;
-  color: black; }
+.picresena {
+  margin-top: -8px; }
 
-.link-resena:hover {
-  text-decoration: underline; }
+.labels-resena-foto {
+  width: 70%;
+  padding-top: 30px;
+  padding-bottom: 53px;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 60px;
+  font-size: 20px;
+  color: #333333; }
 
 /*# sourceMappingURL=style.css.map */
