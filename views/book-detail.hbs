@@ -1,29 +1,49 @@
+<section class="details-container">
+  <div class="belt">
+    <div class="details-content">
+      <div class="details-image-container">
+        <img class="details-image-container__image" src={{oneBook.cover}} alt="{{oneBook.title}}">
+      </div>
+      <div class="details-dates">
+        <p class="details-dates__title"><span class="details-dates__bold">Título:</span> {{oneBook.title}}</p>
+        <p class="details-dates__author"><span class="details-dates__bold">Autor:</span> {{oneBook.author}}</p>
+        <p class="details-dates__category"><span class="details-dates__bold">Categoría:</span>
+          {{oneBook.categories.[0].name}}</p>
+        <p class="details-dates__pages"><span class="details-dates__bold">Nº de páginas:</span> {{oneBook.pages}}</p>
+        <p class="details-dates__date"><span class="details-dates__bold">Fecha de publicación:</span>
+          {{oneBook.publisher_date}}</p>
+        <p class="details-dates__description"><span class="details-dates__bold">Descripción: </span>
+          <span>{{oneBook.content}}</span></p>
+        <p class="details-dates__twitter details-dates__bold">¡Comparte en tu perfil esta reseña!</p>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+          data-text="¡Échale un ojo a mi nueva reseña en BookApp!" data-hashtags="Books #ComoMeGustaLeer" data-lang="es"
+          data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
 
-<img src={{oneBook.cover}} alt="{{oneBook.title}}">
-<p>Título: {{oneBook.title}}</p>
-<p>Autor: {{oneBook.author}}</p>
-<p>Categoría: {{oneBook.categories.[0].name}}</p>
-<p>Nº de páginas: {{oneBook.pages}}</p>
-<p>Fecha de publicación: {{oneBook.publisher_date}}</p>
-<p><span>Descripción: </span> <span>{{oneBook.content}}</span></p>
+    <div class="comments-form-container">
+      <h2 class="comments-form-container__title">Añadir un comentario</h2>
+      <form class="comments-form" action="/addComment/{{oneBook._id}}" method="POST">
+        <label class="comments-form__label">Escribe tu comentario:</label>
+        <textarea class="comments-form__text" name="content" cols="30" rows="5"></textarea>
+        <input class="comments-form__btn" type="submit"  value="Enviar comentario">
+      </form>
+    </div>
 
-<h2>Añadir un comentario</h2>
-<form action="/addComment/{{oneBook._id}}" method="POST">
-<label>Escribir un comentario:</label>
-<textarea name="content" cols="30" rows="5"></textarea>
-  <input type="submit" onclick="display()" value="Submit comment">
-</form>
-
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="¡Échale un ojo a mi nueva reseña en BookApp!" data-hashtags="Books #ComoMeGustaLeer" data-lang="es" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<h2>Comentarios:</h2>
-<ul>
-  {{#each oneBook.comments}}
-  <li>
-    <img src={{this.creatorId.photo.url}} alt="">
-    <p>Autor: {{this.creatorId.username}}</p>
-    <p>{{this.content}}</p>
-  </li>
-  {{/each}}
-</ul>
+    <div class="comments-container">
+      <h2 class="comments-container__title">Comentarios:</h2>
+      <ul class="comments">
+        {{#each oneBook.comments}}
+        <li class="comments-item">
+          <div class="comments-ident-container">
+            <img class="comments-item__image" src={{this.creatorId.photo.url}} alt="">
+            <p class="comments-item__author">{{this.creatorId.username}}</p>
+          </div>
+          <p class="comments-content">{{this.content}}</p>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</section>

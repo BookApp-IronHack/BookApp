@@ -1,5 +1,5 @@
 .home {
-  padding-top: 8rem;
+  padding-top: 9rem;
 }
 
 .books {
@@ -7,6 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .books-item {
@@ -19,6 +20,7 @@
   -webkit-box-shadow: 7px 7px 16px 0px rgba(207, 207, 207, 1);
   -moz-box-shadow: 7px 7px 16px 0px rgba(207, 207, 207, 1);
   box-shadow: 7px 7px 16px 0px rgba(207, 207, 207, 1);
+  position: relative;
 }
 
 .books-item__container {
@@ -110,4 +112,17 @@
 
 .books-details__item span:nth-child(4) {
   --n: 4;
+}
+
+// New
+.books-item:nth-child(1)::after,
+.books-item:nth-child(2)::after{
+  content: "";
+  width: 170px;
+  height: 137px;
+  display: block;
+  background: url(../../images/new.png);
+  position: absolute;
+  top: -17px;
+  left: 0;
 }

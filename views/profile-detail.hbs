@@ -1,19 +1,42 @@
-<img src={{user.photo.url}}>
+<section class="profile-container">
+  <div class="belt">
+    <div class="profile-dates">
+      <div class="profile-image">
+        <img class="profile-image__img" src={{user.photo.url}}>
+      </div>
+      <div class="profile-ident">
+        <p class="profile-ident__name"><span class="profile-ident__bold">Nombre de usuario:</span> {{user.username}}</p>
+        <p class="profile-ident__name"><span class="profile-ident__bold">Email:</span> {{user.email}}</p>
+      
+         <ul>
+            <a href="/resena">
+              <li class="profile-ident__item">Crear reseña
+                <span></span><span></span><span></span><span></span>
+              </li>
+            </a></ul>
+      </div>
+    </div>
 
-<p>Nombre de usuario: {{user.username}}</p>
-
-<button> <a href="/resena">Añadir reseñas</a></button>
-
-
-<ul>
-{{#each user.books}}
-<li>
-    <img src={{this.cover}}>
-  <p>Título:{{this.title}}</p>
-  <p>Autor: {{this.author}}</p>
-  <p>Categoría: {{this.categories.[0].name}}</p>
-
-</li>
-<a href="/books/{{this._id}}">Ver detalles</a>
-{{/each}}
-</ul>
+    <h2 class="profile-books-title">Tus reseñas:</h2>
+    <ul class="profile-books">
+      {{#each user.books}}
+      <li class="profile-books-item">
+        <img class="profile-books-item__image" src={{this.cover}}>
+         <div class="profile-books-item__container">
+          <p class="profile-books-item__title"><span class="profile-books-item__bold">Título:</span> {{this.title}}</p>
+          <p class="profile-books-item__author"><span class="profile-books-item__bold">Autor:</span> {{this.author}}</p>
+          <p class="profile-books-item__category"><span class="profile-books-item__bold">Categoría:</span> {{this.categories.[0].name}}
+          </p>
+          <ul class="profile-book-details-container">
+            <a class="profile-books-details" href="/books/{{this._id}}">
+              <li class="profile-books-details__item">Ver detalles
+                <span></span><span></span><span></span><span></span>
+              </li>
+            </a></ul>
+        </div>
+      </li>
+    
+      {{/each}}
+    </ul>
+  </div>
+</section>
