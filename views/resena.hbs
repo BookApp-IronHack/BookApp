@@ -1,31 +1,28 @@
-<h1>Reseña</h1>
+<div class="div-resena">
+  <form action="/resena" method="POST" id="resena-form" enctype="multipart/form-data" id="form-container">
 
-<form action="/resena" method="POST" id="resena-form" enctype="multipart/form-data">
+    <h1 class="h1-resena">Reseña</h1>
 
-  <label for="title">Titulo</label>
-  <input type="text" name="title" id="title">
-  <br>
-  <label for="author">Autor</label>
-  <input type="text" name="author" id="author">
-  <br>
-  <label for="pages">Paginas</label>
-  <input type="number" name="pages" id="pages">
-  <br>
-  <label for="publisher_date">Fecha de publicación</label>
-  <input type="number" min="1900" max="2099" step="1"  name="publisher_date" id="publisher_date">
-  <br>
-  <label for="categories">Categorias</label>
-  <input type="text" name="categories" id="categories">
-  <br>
-  <label for="content">Reseña</label>
-  <input type="text" name="content" id="content">
-  <br>
-  <input type="file" name="picName" id="picName">
-  <button>Create</button>
+    <label for="title">Titulo</label>
+    <input type="text" name="title" id="title">
+    <br>
+    <label for="author">Autor</label>
+    <input type="text" name="author" id="author">
+    <br>
+    <label for="pages">Paginas</label>
+    <input type="number" name="pages" id="pages">
+    <br>
+    <label for="publisher_date">Fecha de publicación</label>
+    <input type="number" min="1900" max="2099" step="1" name="publisher_date" id="publisher_date">
+    <br>
+    <label for="categories">Categorias</label>
+    <input type="text" name="categories" id="categories">
+    <br>
+    <label for="content">Reseña</label>
+    <input type="text" name="content" id="content">
+    <br>
+    <input type="file" name="picName" id="picName">
+    <button>Create</button>
 
-</form>
-
-
-
-
-</form>
+  </form>
+</div>
