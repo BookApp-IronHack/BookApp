@@ -277,4 +277,119 @@ body {
   justify-content: space-around;
   padding-bottom: 2rem; }
 
+.details-container {
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.details-content {
+  display: flex;
+  margin-bottom: 2rem; }
+
+.details-image-container {
+  margin-right: 3%; }
+
+.details-image-container__image {
+  width: 265px; }
+
+.details-dates__title,
+.details-dates__author,
+.details-dates__category,
+.details-dates__pages,
+.details-dates__date,
+.details-dates__description,
+.details-dates__twitter {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 0.5rem;
+  line-height: 1rem; }
+
+.details-dates__bold {
+  font-weight: bold;
+  width: 100%;
+  display: block;
+  margin-bottom: 0.1rem; }
+
+.details-dates__twitter {
+  margin-bottom: 0.5rem; }
+
+.comments-form-container__title {
+  font-size: 1.4rem;
+  color: #333333;
+  margin-bottom: 1rem; }
+
+.comments-form__label {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 0.5rem;
+  line-height: 1rem;
+  font-weight: bold;
+  width: 100%;
+  display: block; }
+
+.comments-form__text {
+  width: 100%;
+  resize: none;
+  font-size: 1rem;
+  padding: 1rem;
+  border: 2px solid #517F2F;
+  border-radius: 5px;
+  line-height: 1.2rem;
+  -webkit-box-shadow: 7px 7px 16px 0px #cfcfcf;
+  -moz-box-shadow: 7px 7px 16px 0px #cfcfcf;
+  box-shadow: 7px 7px 16px 0px #cfcfcf; }
+
+.comments-form__btn {
+  background: #224511;
+  font-size: 0.8rem;
+  border: none;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer; }
+
+.comments-form__btn:hover {
+  background: #517F2F; }
+
+.comments-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.comments-container__title {
+  font-size: 1.4rem;
+  color: #333333;
+  margin-bottom: 1rem; }
+
+.comments-item {
+  margin-bottom: 1rem;
+  border: 2px solid #517F2F;
+  border-radius: 5px;
+  padding: 1rem;
+  background: #FFF; }
+
+.comments-ident-container {
+  display: flex; }
+
+.comments-item__image {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  max-width: 60px; }
+
+.comments-item__author {
+  font-size: 1rem;
+  color: #333333;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  padding-top: 0.5rem; }
+
+.comments-content {
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  color: #333333;
+  line-height: 1.2rem; }
+
 /*# sourceMappingURL=style.css.map */
