@@ -1,14 +1,20 @@
-<p>BOOKAPP</p>
-
-
-<nav>
-  <a href="/">Home</a>
-  <a href="/twitter">¿Que pasa en Twitter?</a>
-  {{#if user}}
-  <a href="/profile">Perfil</a>
-  <a href="/auth/logout">Salir</a>
-  {{else}}
-  <a href="/auth/login">Iniciar sesión</a>
-  <a href="/auth/signup">Registrarse</a>
-  {{/if}}
-</nav>
+<header class="header">
+  <div class="belt">
+    <div class="header-container">
+      <img class="header-logo" src="../../images/logo.png">
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-item__go" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-item__go" href="/twitter">#QueLeer</a></li>
+          {{#if user}}
+          <li class="nav-item"><a class="nav-item__go" href="/profile">Perfil</a></li>
+          <li class="nav-item"><a class="nav-item__go" href="/auth/logout">Salir</a></li>
+          {{else}}
+          <li class="nav-item"><a class="nav-item__go" href="/auth/login">Iniciar sesión</a></li>
+          <li class="nav-item"><a class="nav-item__go" href="/auth/signup">Registrarse</a></li>
+          {{/if}}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
