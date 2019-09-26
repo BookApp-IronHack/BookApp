@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
       categories: 1
     })
     .then(allBooks => {
+      allBooks.reverse();
       res.render('index', {allBooks, user: req.user})
     })
   })
@@ -24,7 +25,6 @@ router.get('/books/:id/', (req, res) => {
     .populate({ path: 'comments', populate: { path: 'creatorId' } })
     .lean()
     .then(oneBook => {
-      console.log(oneBook)
      if(oneBook['comments']){
       oneBook['comments'] = oneBook.comments.reverse();
       res.render('book-detail', {

@@ -336,7 +336,7 @@ body {
   width: 25%; }
 
 .home {
-  padding-top: 8rem; }
+  padding-top: 9rem; }
 
 .books {
   list-style-type: none;
@@ -354,7 +354,8 @@ body {
   background: #FFF;
   -webkit-box-shadow: 7px 7px 16px 0px #cfcfcf;
   -moz-box-shadow: 7px 7px 16px 0px #cfcfcf;
-  box-shadow: 7px 7px 16px 0px #cfcfcf; }
+  box-shadow: 7px 7px 16px 0px #cfcfcf;
+  position: relative; }
 
 .books-item__container {
   position: relative; }
@@ -431,6 +432,17 @@ body {
 
 .books-details__item span:nth-child(4) {
   --n: 4; }
+
+.books-item:nth-child(1)::after,
+.books-item:nth-child(2)::after {
+  content: "";
+  width: 170px;
+  height: 137px;
+  display: block;
+  background: url(../../images/new.png);
+  position: absolute;
+  top: -17px;
+  left: 0; }
 
 .timeline-container {
   padding-top: 8rem;
