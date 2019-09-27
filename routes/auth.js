@@ -25,7 +25,7 @@ const transporter = nodemailer.createTransport({
 router.get("/login", (req, res, next) => {
   if (req.query.error) {
     res.render("auth/login", {
-      message: "Account not activated. Please check your email."
+      message: "Cuenta no activada. Por favor, revisa tu email."
     });
   } else {
     res.render("auth/login", { message: req.flash("error") });
@@ -47,7 +47,7 @@ router.post(
 
 router.get("/signup", (req, res, next) => {
   if (req.query.error) {
-    res.render("auth/signup", { message: "User not found" });
+    res.render("auth/signup", { message: "Usuario no encontrado" });
   } else {
     res.render("auth/signup");
   }
@@ -58,13 +58,13 @@ router.post("/signup", upload.single("userPhoto"), (req, res, next) => {
   const { originalname, url } = req.file;
 
   if (username === "" || password === "" || email === "") {
-    res.render("auth/signup", { message: "Indicate username and password" });
+    res.render("auth/signup", { message: "Índica un usuario y una contraseña" });
     return;
   }
 
   User.findOne({ username }, "username", (err, user) => {
     if (user !== null) {
-      res.render("auth/signup", { message: "The username already exists" });
+      res.render("auth/signup", { message: "Este usuario ya existe" });
       return;
     }
 
@@ -90,7 +90,7 @@ router.post("/signup", upload.single("userPhoto"), (req, res, next) => {
           from: "info@info.com",
           to: email,
           subject: `${username} welcome! :)`,
-          html: `<a href="https://bookappironhack.herokuapp.com/auth/confirm/${validationCode}">Click here to activate your account</a>`
+          html: `<a href="http://localhost:3000/auth/confirm/${validationCode}">Haz click aquí para activar tu cuenta</a>`
         })
         .then(() => res.redirect("/"))
         .catch(err => {
@@ -98,7 +98,7 @@ router.post("/signup", upload.single("userPhoto"), (req, res, next) => {
         })
         .catch(err => {
           console.log(err);
-          res.render("auth/signup", { message: "Something went wrong" });
+          res.render("auth/signup", { message: "Algo ha ido mal..." });
         });
     });
   });
@@ -112,6 +112,7 @@ router.get("/logout", (req, res) => {
 });
 
 router.get("/confirm/:token", (req, res) => {
+  const user = req.user;
   User.updateOne({validationCode: req.params.token}, {active:true}, {new: true})
   .then(userUpdated => {
     if (userUpdated) {

@@ -1,8 +1,12 @@
-{{#if error}}
-Your account hasn't been found. Please sign up.
-<a href="/auth/signup">Sign up</a>
-{{/if}}
-{{#if user}}
-Your account has been activated, please log in.
-<a href="/auth/login">Log in</a>
-{{/if}}
+<section class="activation">
+  <div class="belt">
+    {{#if error}}
+    <p class="activation-text">Tu cuenta no existe 😔. Por favor,
+    <a href="/auth/signup">Registrarse</a></p>
+    {{/if}}
+    {{#if user}}
+    <p class="activation-text">Tu cuenta ha sido activada con éxito 😊. Por favor,
+    <a href="/auth/login">inicia sesión</a></p>
+    {{/if}}
+  </div>
+</section>

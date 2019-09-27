@@ -553,6 +553,7 @@ body {
   height: 60px;
   font-size: 20px;
   color: #333333; }
+
 .details-container {
   padding-top: 8rem;
   display: flex;
@@ -671,7 +672,8 @@ body {
 .profile-container {
   padding-top: 8rem;
   display: flex;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  min-height: 90vh; }
 
 .profile-dates {
   display: flex;
@@ -685,7 +687,8 @@ body {
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
   border-bottom-left-radius: 50% 50%;
-  max-width: 260px; }
+  width: 260px;
+  height: 95%; }
 
 .profile-ident {
   position: relative;
@@ -852,5 +855,17 @@ body {
 
 .profile-books-details__item span:nth-child(4) {
   --n: 4; }
+
+.activation {
+  padding-top: 9rem;
+  min-height: 90vh;
+  text-align: center; }
+
+.activation-text {
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  color: #333333;
+  margin-bottom: 0.5rem;
+  line-height: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

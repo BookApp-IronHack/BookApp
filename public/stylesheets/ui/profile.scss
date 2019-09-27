@@ -2,6 +2,7 @@
   padding-top: 8rem;
   display: flex;
   margin-bottom: 1rem;
+  min-height: 90vh;
 }
 
 .profile-dates {
@@ -18,9 +19,9 @@
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
   border-bottom-left-radius: 50% 50%;
-  max-width: 260px;
+  width: 260px;
+  height: 95%;
 }
-
 .profile-ident {
   position: relative;
   min-height: 16rem;
