@@ -90,7 +90,7 @@ router.post("/signup", upload.single("userPhoto"), (req, res, next) => {
           from: "info@info.com",
           to: email,
           subject: `${username} welcome! :)`,
-          html: `<a href="http://localhost:3000/auth/confirm/${validationCode}">Haz click aquí para activar tu cuenta</a>`
+          html: `<a href="https://bookappironhack.herokuapp.com/auth/confirm/${validationCode}">Haz click aquí para activar tu cuenta</a>`
         })
         .then(() => res.redirect("/"))
         .catch(err => {
