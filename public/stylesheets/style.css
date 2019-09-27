@@ -67,7 +67,8 @@ body {
   display: block;
   margin: 0 auto;
   max-width: 1300px;
-  width: 100%; }
+  width: 100%;
+  padding: 0 1rem; }
 
 .header {
   background-color: #517F2F;
@@ -451,7 +452,7 @@ body {
   display: block;
   background: url(../../images/new.png);
   position: absolute;
-  top: -17px;
+  top: -13px;
   left: 0;
   background-size: contain;
   background-repeat: no-repeat; }
